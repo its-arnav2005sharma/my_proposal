@@ -1,0 +1,73 @@
+.page {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page.active {
+    display: block;
+    opacity: 1;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFB6C1;  /* Baby Pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.gif {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.text, .question, #yayMessage {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff77a9;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:focus {
+    outline: none;
+}
+
+#yayMessage {
+    font-size: 2.5rem;
+    color: #ff1493;
+    font-weight: bold;
+}
+
+.next-btn {
+    background-color: #ff1493;
+    color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.answer-btn {
+    margin: 10px 20px;
+    background-color: #ff77a9;
+    color: white;
+}
+
+#next1, #next2, #next3 {
+    background-color: #ff77a9;
+}
